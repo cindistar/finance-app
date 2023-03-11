@@ -6,8 +6,9 @@ on:
       - dev-*
 
 jobs:
-  Flutter_Tests
-    runs-on: ubuntu-latest
+  flutter_test:
+    - name: ✨ Testing
+  runs-on: ubuntu-latest
 
   steps:
     - name: 📦 Get Repository 
@@ -28,6 +29,9 @@ jobs:
 
     - name: 🏃‍♀️ Run Flutter Pub Get
       run: flutter pub get
+
+    - name: 🔎 Analyze
+      run: flutter analyze lib test
 
     - name: 🎯 Dart Format
       run: dart format --set-exit-if-changed lib test
