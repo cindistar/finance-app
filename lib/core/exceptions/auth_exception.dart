@@ -24,7 +24,6 @@ class InvalidCredentialsException implements Exception {
   const InvalidCredentialsException(this.message);
 }
 
-
 class SomethingWentWrongDefaultException implements Exception {
   final String message;
 
