@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'finance_app',
+      title: 'finance_appp',
       theme: ThemeData(
         primarySwatch: Colors.blue,
         colorScheme: ThemeData().colorScheme.copyWith(primary: Colors.grey),
