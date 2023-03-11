@@ -18,6 +18,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      
       debugShowCheckedModeBanner: false,
       title: 'finance_app',
       theme: ThemeData(
@@ -33,6 +34,7 @@ class MyApp extends StatelessWidget {
         Locale('pt'),
       ],
       initialRoute: '/splash',
+
       routes: {
         '/login': (context) => const LoginPage(),
         '/forgot': (context) => const ForgotPasswordPage(),
