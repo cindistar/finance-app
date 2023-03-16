@@ -37,7 +37,7 @@ void main() {
         () async {
           // arrange
           when(() => repository.getTransactionsList(userId))
-              .thenAnswer((_) async => [transactionsModel]);
+              .thenAnswer((_) async => []);
 
           // act
           final result = await repository.getTransactionsList(userId);
